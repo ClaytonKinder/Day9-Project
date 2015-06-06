@@ -188,6 +188,8 @@ function photoPageConstructor(actPho) {
     $allPages.removeClass('active');
     $albumPage.addClass('active');
   });
+
+
 }
 
 function photoPageTitleConstructor(actTitle) {

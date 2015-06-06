@@ -252,7 +252,7 @@ PHOTO PAGE
   border-bottom: 10px solid #063940; }
   #photoPageNavWrapper #photoPageBackBlock {
     background-color: #8EBDB6;
-    width: 25%;
+    width: 300px;
     height: 55px;
     padding: 10px;
     border-radius: 5px;
@@ -313,5 +313,142 @@ PHOTO PAGE
     margin: auto 0; }
     #photoPagePhotoBlock #nextPhoto i {
       text-align: right; }
+
+/*************************
+QUERIES
+*************************/
+@media screen and (max-width: 1199px) {
+  /*************************
+  PHOTO PAGE
+  *************************/
+  #photoPageNavWrapper {
+    flex-direction: column; }
+
+  #photoPageBackBlock {
+    margin-bottom: 25px; } }
+@media screen and (max-width: 899px) {
+  /*************************
+  ALBUMS PAGE
+  *************************/
+  .albumsPageBlock {
+    width: 48%; }
+
+  /*************************
+  ALBUM PAGE
+  *************************/
+  #albumPage {
+    flex-direction: column; }
+
+  #albumPageNav {
+    height: 50%;
+    width: 100%;
+    position: static; }
+    #albumPageNav nav {
+      height: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center; }
+      #albumPageNav nav a {
+        width: 30%;
+        margin-bottom: 25px; }
+        #albumPageNav nav a:nth-last-child(-n+3) {
+          margin-bottom: 0; }
+
+  #albumPageMain {
+    margin-left: 0;
+    width: 100%; }
+
+  /*************************
+  PHOTO PAGE
+  *************************/
+  #photoPageNavWrapper #photoPageTitleBlock {
+    width: 100%; }
+
+  #photoPagePhotoBlock {
+    max-width: 90%; }
+    #photoPagePhotoBlock > div {
+      color: rgba(255, 255, 255, 0.75); }
+    #photoPagePhotoBlock #prevPhoto {
+      left: 0; }
+    #photoPagePhotoBlock #nextPhoto {
+      right: 0; } }
+@media screen and (max-width: 599px) {
+  /*************************
+  ALBUMS PAGE
+  *************************/
+  #albumsPageNavTitle h1 {
+    font-size: 2em; }
+
+  .albumsPageBlock {
+    width: 80%; }
+
+  /*************************
+  ALBUM PAGE
+  *************************/
+  #albumPageNav {
+    height: 25%; }
+    #albumPageNav nav {
+      height: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center; }
+      #albumPageNav nav a {
+        width: 30%;
+        margin-bottom: 5px;
+        font-size: 0.5em; }
+        #albumPageNav nav a:nth-last-child(n+4) {
+          margin-bottom: 5px; }
+        #albumPageNav nav a:nth-last-child(-n+3) {
+          margin-bottom: 5px; }
+
+  #albumPageGalleryWrapper {
+    flex-wrap: wrap; }
+    #albumPageGalleryWrapper .albumPageGalleryBlock {
+      width: 48%; }
+
+  /*************************
+  PHOTO PAGE
+  *************************/
+  #photoPagePhotoBlock {
+    max-width: 100%; }
+
+  #photoPagePhotoWrapper {
+    padding: 0;
+    background: #063940; } }
+@media screen and (max-width: 349px) {
+  /*************************
+  ALBUMS PAGE
+  *************************/
+  #albumsPageNavTitle h1 {
+    font-size: 1.25em; }
+
+  .albumsPageBlock {
+    width: 95%; }
+
+  /*************************
+  ALBUM PAGE
+  *************************/
+  #albumPageNav {
+    height: 35%; }
+    #albumPageNav nav {
+      height: auto;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center; }
+      #albumPageNav nav a {
+        width: 48%;
+        margin-bottom: 5px;
+        font-size: 0.5em; }
+
+  #albumPageGalleryWrapper .albumPageGalleryBlock {
+    width: 95%; }
+
+  /*************************
+  PHOTO PAGE
+  *************************/
+  #photoPageNavWrapper #photoPageTitleBlock {
+    width: 100%; }
+    #photoPageNavWrapper #photoPageTitleBlock h1 {
+      font-size: 1.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */
