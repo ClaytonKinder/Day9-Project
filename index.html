@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Album</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="albumsPage" class="page active">
+    <div id="albumsPageNav">
+      <div id="albumsPageNavTitle">
+        <h1>My Albums</h1>
+      </div>
+    </div>
+
+    <div id="albumsPageMain">
+      <div id="albumsPageWrapper">
+        <!-- Data from albumsPageBlockConstructor() goes here -->
+      </div>
+    </div>
+  </div>
+
+  <div id="albumPage" class="page">
+    <div id="albumPageNav">
+      <nav>
+        <!-- Data from albumPageNavLinkConstructor() goes here -->
+      </nav>
+    </div>
+
+    <div id="albumPageMain">
+      <!-- Data from albumPageMainConstructor() goes here -->
+    </div>
+  </div>
+
+  <div id="photoPage" class="page">
+    <!-- Data from photoPageConstructor() goes here -->
+  </div>
+
+
+
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="photo-album.js"></script>
+</body>
+</html>

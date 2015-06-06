@@ -1,0 +1,28 @@
+{
+  "name": "Day9-Project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ClaytonKinder/Day9-Project",
+  "authors": [
+    "Clayton Kinder <ClaytonAlanKinder@gmail.com>"
+  ],
+  "description": "jQuery Photo Album App",
+  "keywords": [
+    "jQuery",
+    "Photo",
+    "Album",
+    "App"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
