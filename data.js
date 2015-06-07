@@ -168,11 +168,12 @@ function photoPageConstructor(actPho) {
 
 
   constructStr += '<div id="photoPageNavWrapper">';
+  constructStr += '<div id="photoPageBackWrapper">';
   constructStr += '<a id="photoPageBackBlock" href="#">';
   constructStr += '<div id="photoPageBackIcon"><i class="fa fa-chevron-left"></i></div>';
   constructStr += '<div id="photoPageBackText">';
   constructStr += 'Back to ' + fetchedActiveAlbum.title;
-  constructStr += '</div></a>';
+  constructStr += '</div></a></div>';
   constructStr += '<div id="photoPageTitleBlock"><h1>';
   constructStr += photoPageTitleConstructor(fetchedActivePhoto);
   constructStr += '</h1></div></div>';
@@ -192,6 +193,7 @@ function photoPageConstructor(actPho) {
 
 }
 
+// Builds the title that displays on a single photo page
 function photoPageTitleConstructor(actTitle) {
   var constructStr = "";
   var fetchedActivePhoto = fetchActivePhoto();
@@ -208,6 +210,7 @@ function photoPageTitleConstructor(actTitle) {
   return constructStr;
 }
 
+//  Builds the block that displays the single photo itself
 function photoPagePhotoBlockConstructor(actPho) {
   $('#photoPagePhotoWrapper').html("");
   var constructStr = "";

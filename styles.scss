@@ -129,6 +129,7 @@ ALBUMS PAGE
 
 .albumsPageBlockImage {
   background-color: $lightteal;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease;
 
   img {
@@ -140,6 +141,7 @@ ALBUMS PAGE
   padding: 10px 0;
   background: $teal;
   color: white;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
@@ -199,6 +201,7 @@ ALBUM PAGE
       width: 95%;
       text-align: center;
       padding: 15px 0;
+      -webkit-transition: all .25s ease;
       transition: all .25s ease;
 
       &:hover {
@@ -222,8 +225,14 @@ ALBUM PAGE
 #albumPageTitle {
   height: 15%;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 
   #albumPageTitleText {
     color: $teal;
@@ -311,22 +320,46 @@ PHOTO PAGE
 
 #photoPageNavWrapper {
   padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
   border-bottom: 10px solid $darkteal;
 
-  #photoPageBackBlock {
-    background-color: $lightteal;
-    width: 300px;
-    height: 55px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all .25s ease;
+  #photoPageBackWrapper {
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
 
-    &:hover {
-      background-color: $darkteal;
+    #photoPageBackBlock {
+      background-color: $lightteal;
+      width: 300px;
+      height: 55px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all .25s ease;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+              justify-content: space-between;
+
+      &:hover {
+        background-color: $darkteal;
+      }
     }
   }
 
@@ -414,6 +447,10 @@ QUERIES
   *************************/
 
   #photoPageNavWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -438,6 +475,10 @@ QUERIES
   *************************/
 
   #albumPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -448,9 +489,18 @@ QUERIES
 
     nav {
       height: auto;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+              align-items: center;
       a {
        width: 30%;
        margin-bottom: 25px;
@@ -474,6 +524,9 @@ QUERIES
   *************************/
 
   #photoPageNavWrapper {
+    #photoPageBackWrapper {
+      width: 100%;
+    }
     #photoPageTitleBlock {
       width: 100%;
     }

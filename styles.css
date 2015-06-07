@@ -103,6 +103,7 @@ ALBUMS PAGE
 
 .albumsPageBlockImage {
   background-color: #8EBDB6;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease; }
   .albumsPageBlockImage img {
     width: 100%; }
@@ -111,6 +112,7 @@ ALBUMS PAGE
   padding: 10px 0;
   background: #3E838C;
   color: white;
+  -webkit-transition: all .25s ease;
   transition: all .25s ease; }
 
 /*************************
@@ -164,6 +166,7 @@ ALBUM PAGE
       width: 95%;
       text-align: center;
       padding: 15px 0;
+      -webkit-transition: all .25s ease;
       transition: all .25s ease; }
       #albumPageNav nav a:hover {
         background-color: #063940; }
@@ -179,7 +182,13 @@ ALBUM PAGE
 #albumPageTitle {
   height: 15%;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
   #albumPageTitle #albumPageTitleText {
     color: #3E838C; }
@@ -247,20 +256,42 @@ PHOTO PAGE
 
 #photoPageNavWrapper {
   padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   border-bottom: 10px solid #063940; }
-  #photoPageNavWrapper #photoPageBackBlock {
-    background-color: #8EBDB6;
-    width: 300px;
-    height: 55px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all .25s ease;
+  #photoPageNavWrapper #photoPageBackWrapper {
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
-    #photoPageNavWrapper #photoPageBackBlock:hover {
-      background-color: #063940; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #photoPageNavWrapper #photoPageBackWrapper #photoPageBackBlock {
+      background-color: #8EBDB6;
+      width: 300px;
+      height: 55px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all .25s ease;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #photoPageNavWrapper #photoPageBackWrapper #photoPageBackBlock:hover {
+        background-color: #063940; }
   #photoPageNavWrapper #photoPageTitleBlock {
     width: 50%;
     text-align: center;
@@ -322,6 +353,10 @@ QUERIES
   PHOTO PAGE
   *************************/
   #photoPageNavWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
 
   #photoPageBackBlock {
@@ -337,6 +372,10 @@ QUERIES
   ALBUM PAGE
   *************************/
   #albumPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column; }
 
   #albumPageNav {
@@ -345,8 +384,17 @@ QUERIES
     position: static; }
     #albumPageNav nav {
       height: auto;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       align-items: center; }
       #albumPageNav nav a {
         width: 30%;
@@ -361,6 +409,8 @@ QUERIES
   /*************************
   PHOTO PAGE
   *************************/
+  #photoPageNavWrapper #photoPageBackWrapper {
+    width: 100%; }
   #photoPageNavWrapper #photoPageTitleBlock {
     width: 100%; }
 
